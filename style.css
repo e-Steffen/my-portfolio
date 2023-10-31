@@ -1,0 +1,35 @@
+:root {
+  --color-white: #fff;
+  --color-dark-grey: rgb(62, 56, 56);
+  --color-dark-red: #980202;
+  --color-petrol: #6ee1ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Barlow", sans-serif; */
+  /* font-family: "Parisienne", cursive; */
+}
+
+body {
+  display: flex;
+  min-height: 100dvh; /* dynamic viewport hight (also available as width - dvw) */
+  background-color: var(--color-petrol);
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px 0 24px;
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  color: var(--color-dark-grey);
+  font-size: 1.375rem;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: var(--color-petrol);
+}
