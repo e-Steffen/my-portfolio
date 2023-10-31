@@ -1,7 +1,7 @@
 :root {
   --color-white: #fff;
   --color-dark-grey: rgb(62, 56, 56);
-  --color-dark-red: #980202;
+  --color-dark-red: #960d0d;
   --color-petrol: #6ee1ee;
 }
 
@@ -12,28 +12,65 @@
 }
 
 body {
-  display: flex;
+  /* display: flex; */
   min-height: 100dvh; /* dynamic viewport hight (also available as width - dvw) */
   background-color: var(--color-petrol);
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   /* padding: 0 24px 0 24px; */
   font-family: "Barlow", sans-serif;
 }
 
+.navi {
+  display: flex;
+  margin: 1rem 48px;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: var(--color-dark-grey);
+  border-bottom: 0.125rem solid var(--color-dark-red);
+
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.navi span {
+  margin-right: 1rem;
+}
+
+#name {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+#slogan {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 h1 {
+  display: flex;
+  max-width: 55%;
   color: var(--color-dark-grey);
   font-size: 3.375rem;
+  margin-top: 80px;
+  margin-bottom: 5rem;
 }
 
 h1:hover {
   cursor: pointer;
   color: var(--color-dark-red);
+  margin-top: 4.6875rem;
+  margin-left: 48px;
+  transition-duration: 0.4s;
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 320px);
+  display: flex;
+  /* grid-template-columns: repeat(3, 320px); */
+  justify-content: center;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .project {
