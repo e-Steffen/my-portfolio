@@ -45,6 +45,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  letter-spacing: 0.3rem;
 }
 
 h1 {
@@ -118,6 +119,7 @@ h1:hover {
   color: var(--color-dark-red);
   position: absolute;
   z-index: 1;
+  font-family: "Barlow";
 }
 
 .imprint:hover .imprintBox {
