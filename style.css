@@ -41,6 +41,11 @@ body {
   letter-spacing: 2px;
 }
 
+#pic-me {
+  width: 2.5rem;
+  height: 3.31rem;
+}
+
 #slogan {
   display: flex;
   justify-content: center;
