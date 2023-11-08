@@ -87,17 +87,41 @@ h1:hover {
   height: 400px;
 }
 
-#pOne {
-  /* margin-bottom: 5px; */
+#pOne-overlay {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-grey);
+  opacity: 0.7;
+  height: 25rem;
+  width: 25rem;
+  display: none;
+  position: absolute;
 }
 
-#pTwo {
-  /* margin-top: 0.3125rem;
-  margin-bottom: 0.3125rem; */
+#pTwo-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-grey);
+  opacity: 0.7;
+  height: 25rem;
+  width: 25rem;
+  /* display: none; */
+  position: absolute;
 }
 
-#pThree {
-  /* margin-top: 0.3125rem; */
+#pThree-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-grey);
+  opacity: 0.7;
+  height: 25rem;
+  width: 25rem;
+  /* display: none; */
+  position: absolute;
 }
 
 .footer {
