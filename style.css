@@ -70,14 +70,14 @@ h1:hover {
   transition-duration: 0.4s;
 }
 
-#forPositioning {
+#pTiles {
   display: flex;
   justify-content: center;
 }
 
 .projects {
   display: flex;
-  width: 65%;
+  width: 68%;
   justify-content: space-between;
 }
 
@@ -87,9 +87,13 @@ h1:hover {
   height: 400px;
 }
 
+.tileLinks {
+  color: var(--color-white);
+}
+
 #pOne-overlay {
   cursor: pointer;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark-grey);
@@ -101,26 +105,28 @@ h1:hover {
 }
 
 #pTwo-overlay {
-  display: flex;
+  cursor: pointer;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark-grey);
   opacity: 0.7;
   height: 25rem;
   width: 25rem;
-  /* display: none; */
+  display: none;
   position: absolute;
 }
 
 #pThree-overlay {
-  display: flex;
+  cursor: pointer;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   background-color: var(--color-dark-grey);
   opacity: 0.7;
   height: 25rem;
   width: 25rem;
-  /* display: none; */
+  display: none;
   position: absolute;
 }
 
