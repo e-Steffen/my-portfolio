@@ -12,7 +12,7 @@
 }
 
 body {
-  min-height: 100dvh; /* dynamic viewport hight (also available as width - dvw) */
+  min-height: 100dvh;
   background-color: var(--color-petrol);
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@ body {
   font-size: 1.5rem;
   color: var(--color-dark-grey);
   border-bottom: 0.125rem solid var(--color-dark-red);
-  position: fixed;
+  position: sticky;
   width: 100%;
   padding: 0.5rem 0 0.5rem 0;
 }
@@ -37,7 +37,7 @@ body {
 #name {
   margin-right: auto;
   margin-left: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 
 #pic-me {
@@ -65,15 +65,14 @@ body {
   justify-content: center;
   text-align: center;
   letter-spacing: 0.3rem;
-  padding-top: 3.375rem;
 }
 
 #h1-jump-box {
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 64px;
-  margin-bottom: 3.375rem;
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
   max-width: 55%;
 }
 
@@ -93,27 +92,50 @@ p {
   font-size: 1.4rem;
 }
 
+@media screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h1:hover {
+    cursor: pointer;
+    color: var(--color-dark-red);
+    padding-left: 0rem;
+    transition-duration: 0.05s;
+  }
+
+  #h1-jump-box {
+    margin-top: 1rem;
+  }
+
+  #slogan {
+    padding-top: 1rem;
+  }
+}
+
 #pTiles {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .projects {
   display: flex;
-  width: 68%;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 68%;
+  justify-content: center;
   color: var(--color-white);
 }
 
 .project {
   display: flex;
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
+  margin: 0.5rem;
 }
 
 .tileLinks {
   color: var(--color-white);
-  margin-right: 22px;
+  margin-right: 1.375rem;
 }
 
 #pOne-overlay {
@@ -128,8 +150,8 @@ p {
 }
 
 #pOne-overlay p {
-  margin-left: 22px;
-  margin-right: 22px;
+  margin-left: 1.375rem;
+  margin-right: 1.375rem;
 }
 
 #pTwo-overlay {
@@ -144,8 +166,8 @@ p {
 }
 
 #pTwo-overlay p {
-  margin-left: 22px;
-  margin-right: 22px;
+  margin-left: 1.375rem;
+  margin-right: 1.375rem;
 }
 
 #pThree-overlay {
@@ -153,33 +175,33 @@ p {
   align-items: center;
   background-color: var(--color-dark-grey);
   opacity: 0.7;
-  height: 25rem;
   width: 25rem;
+  height: 25rem;
   display: none;
   position: absolute;
 }
 
 #pThree-overlay p {
-  margin-left: 22px;
-  margin-right: 22px;
+  margin-left: 1.375rem;
+  margin-right: 1.375rem;
 }
 
 .footer {
   display: flex;
-  position: absolute;
+  position: relative;
   width: 96%;
   margin-left: 2%;
-  bottom: 1rem;
+  margin-top: 7.2%;
   justify-content: space-between;
   font-family: monospace;
 }
 
 .location .towerPic {
   visibility: hidden;
-  width: 180px;
+  max-width: 11.25rem;
   bottom: 100%;
   left: 5%;
-  margin-left: -90px;
+  margin-left: -5.625rem;
   position: absolute;
   z-index: 1;
 }
@@ -196,10 +218,10 @@ p {
 
 .imprint .imprintBox {
   visibility: hidden;
-  width: 180px;
+  max-width: 11.25rem;
   bottom: 100%;
   left: 95%;
-  margin-left: -90px;
+  margin-left: -5.625rem;
   background-color: var(--color-white);
   color: var(--color-dark-red);
   position: absolute;
